@@ -11,9 +11,11 @@ import webbrowser
 # open an HTML file on my own (Windows) computer
 # Display html tables
 
-with open('example.html', 'w') as f: # writing an HTML file in my local disk
-    f.write("<Content-Type: text/html>")
-    f.write ("""
+from lesson_04_class import FileOperate as fo
+
+name = 'example.html'
+path = '/Users/fennieliang/Documents/GitHub/python/week07'
+string = """<Content-Type: text/html>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -48,13 +50,14 @@ with open('example.html', 'w') as f: # writing an HTML file in my local disk
 
 </body>
 </html>
-""")
+"""
   
-f.close()
+fo.create(path, name, string)
 
 
 # open an HTML file on my own (Windows) computer
-url = "file:///Users/fennieliang/Documents/GitHub/python/lesson04/example.html"
+url = "file:///Users/fennieliang/Documents/GitHub/python/week07/example.html"
+
 webbrowser.open_new(url)
 
 # open a public URL, in this case, the webbrowser docs

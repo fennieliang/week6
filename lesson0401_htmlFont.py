@@ -12,7 +12,7 @@ import webbrowser
 from lesson_04_class import FileOperate as fo
 
 name = 'example.html'
-path = '/Users/fennieliang/Documents/GitHub/python/lesson04'
+path = '/Users/fennieliang/Documents/GitHub/python/week07'
 string = """<Content-Type: text/html>
  
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ string = """<Content-Type: text/html>
   <h5>Heading 5</h5>
   <h6>Heading 6</h6>
   <p>
-    Our first <b>HTML</b>, <mark>lesson</mark>, taught by Dr. <a href="https://sites.google.com/site/fennieliang/"><ins>Fennie Liang</ins></a>.
+    Our first <b>HTML</b>, <mark>lesson</mark>, --- <a href="https://sites.google.com/site/fennieliang/"><ins>Fennie Liang</ins></a>.
   </p>
 
   <p> 
@@ -69,7 +69,7 @@ string = """<Content-Type: text/html>
 fo.create(path, name, string)
 
 # open an HTML file on my own (Windows) computer, change the path to suit yours
-url = "file:///Users/fennieliang/Documents/GitHub/python/lesson04/example.html"
+url = "file:///Users/fennieliang/Documents/GitHub/python/week07/example.html"
 
 webbrowser.open_new(url)
 
